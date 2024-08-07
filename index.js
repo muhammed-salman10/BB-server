@@ -22,7 +22,7 @@ bbserver.use('/uploads',express.static('./uploads'))
 bbserver.use(router)
 
 
-const PORT=3002
+const PORT=3002 || process.env.PORT
 
 //to host bbserver : localhost:3002
 bbserver.listen(PORT,()=>{
